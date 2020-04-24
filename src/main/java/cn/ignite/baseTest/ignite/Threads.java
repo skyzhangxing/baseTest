@@ -36,7 +36,7 @@ public class Threads {
 				cache.get(i);
 				// System.out.println("Got [key=" + i + ", val=" + cache.get(i) + ']');
 				//System.out.println(cache.get(i));
-				if(i>999900) {
+				if(i>99) {
 					System.out.println(cache.get(i));
 				}
 			}
