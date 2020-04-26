@@ -29,7 +29,7 @@ public class IgniteSQL {
 
 		// Populate City table
 		try (PreparedStatement stmt = conn.prepareStatement("INSERT INTO City (id, name) VALUES (?, ?)")) {
-			for (int i = 0; i < 1000000000; i++) {
+			for (int i = 0; i < 100; i++) {
 				stmt.setLong(1, i);
 				stmt.setString(2, "Forest Hill");
 				stmt.executeUpdate();
